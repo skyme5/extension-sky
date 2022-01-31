@@ -1,0 +1,9 @@
+{
+  "name": "extension-sky",
+  "version": "1.0.0",
+  "description": "Chrome extension for personal use",
+  "main": "index.js",
+  "repository": "https://github.com/skyme5/extension-sky",
+  "author": "Aakash Gajjar <skyqutip@gmail.com>",
+  "license": "MIT"
+}
