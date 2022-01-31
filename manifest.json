@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Sky Utilities",
+  "description": "Extension for use by Sky",
+  "version": "0.0.1",
+  "icons": {
+    "64": "icons/icon.png"
+  },
+  "background": {
+    "service_worker": "background/worker.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://gen.lib.rus.ec/*", "*://libgen.rs/*"],
+      "js": ["modules/libgen_utils.js", "modules/libgen_check.js"]
+    }
+  ],
+  "options_ui": {
+    "page": "options/index.html"
+  },
+  "permissions": ["contextMenus", "tabs"],
+  "host_permissions": ["*://localhost/*", "*://127.0.0.1/*"]
+}
